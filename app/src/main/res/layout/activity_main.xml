@@ -6,14 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="35dp"
         android:layout_height="wrap_content">
         <EditText
             android:id="@+id/temperatura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            />
+          <LinearLayout
+              android:id="@+id/btn_conv"
+              android:clickable="true"
+              android:focusable="true"
+              android:background="@drawable/shape"
+              android:gravity="center"
+              android:layout_marginTop="20dp"
+              android:padding="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="Converter"
+                  android:textColor="@color/white"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                    />
+          </LinearLayout>
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            tools:visibility="visible"
+            android:background="#36602c"
+            android:visibility="gone"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             />
     </LinearLayout>
 </RelativeLayout>
